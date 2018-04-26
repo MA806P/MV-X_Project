@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E9E3E694524DE9F93A8D108 /* libPods-MV-X_Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAEF60C86967BAF8013937C /* libPods-MV-X_Project.a */; };
 		DA2AED262089CB04009CBE80 /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2AED252089CB04009CBE80 /* MVPViewController.m */; };
 		DA2AED292089CB17009CBE80 /* MVPView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2AED282089CB17009CBE80 /* MVPView.m */; };
 		DA2AED2C2089CB2B009CBE80 /* MVPPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2AED2B2089CB2B009CBE80 /* MVPPresenter.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DAEF60C86967BAF8013937C /* libPods-MV-X_Project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MV-X_Project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EE26A635C1D8BDFC5B023CF /* Pods-MV-X_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MV-X_Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MV-X_Project/Pods-MV-X_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		DA2AED242089CB04009CBE80 /* MVPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPViewController.h; sourceTree = "<group>"; };
 		DA2AED252089CB04009CBE80 /* MVPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPViewController.m; sourceTree = "<group>"; };
 		DA2AED272089CB17009CBE80 /* MVPView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPView.h; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		DA72AA9D20887CFC00BFC34E /* MV-X_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MV-X_ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA72AAA120887CFC00BFC34E /* MV_X_ProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MV_X_ProjectUITests.m; sourceTree = "<group>"; };
 		DA72AAA320887CFC00BFC34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1761EECF8ECD4CE93EE82E /* Pods-MV-X_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MV-X_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-MV-X_Project/Pods-MV-X_Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9E3E694524DE9F93A8D108 /* libPods-MV-X_Project.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A97A614012C3A8D1AE72F0B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DAEF60C86967BAF8013937C /* libPods-MV-X_Project.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3E1DA5919C0180FA508E593 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EE26A635C1D8BDFC5B023CF /* Pods-MV-X_Project.debug.xcconfig */,
+				DB1761EECF8ECD4CE93EE82E /* Pods-MV-X_Project.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA2AED222089CAD5009CBE80 /* MVPDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +161,8 @@
 				DA72AA9520887CFC00BFC34E /* MV-X_ProjectTests */,
 				DA72AAA020887CFC00BFC34E /* MV-X_ProjectUITests */,
 				DA72AA7B20887CFA00BFC34E /* Products */,
+				D3E1DA5919C0180FA508E593 /* Pods */,
+				A97A614012C3A8D1AE72F0B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA72AAA620887CFC00BFC34E /* Build configuration list for PBXNativeTarget "MV-X_Project" */;
 			buildPhases = (
+				E12F42E0809CFB50F5F8C87D /* [CP] Check Pods Manifest.lock */,
 				DA72AA7620887CFA00BFC34E /* Sources */,
 				DA72AA7720887CFA00BFC34E /* Frameworks */,
 				DA72AA7820887CFA00BFC34E /* Resources */,
@@ -312,6 +337,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E12F42E0809CFB50F5F8C87D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MV-X_Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA72AA7620887CFA00BFC34E /* Sources */ = {
@@ -495,15 +541,13 @@
 		};
 		DA72AAA720887CFC00BFC34E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EE26A635C1D8BDFC5B023CF /* Pods-MV-X_Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_Project/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,15 +556,13 @@
 		};
 		DA72AAA820887CFC00BFC34E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1761EECF8ECD4CE93EE82E /* Pods-MV-X_Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_Project/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -534,11 +576,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_ProjectTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-ProjectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,11 +591,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_ProjectTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-ProjectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -571,11 +605,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_ProjectUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-ProjectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -589,11 +619,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_ProjectUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-ProjectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
