@@ -36,5 +36,7 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (IBAction)goRACPage:(id)sender {
+}
 
 @end
