@@ -24,6 +24,12 @@
 		DA72AA8D20887CFB00BFC34E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72AA8C20887CFB00BFC34E /* main.m */; };
 		DA72AA9720887CFC00BFC34E /* MV_X_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72AA9620887CFC00BFC34E /* MV_X_ProjectTests.m */; };
 		DA72AAA220887CFC00BFC34E /* MV_X_ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72AAA120887CFC00BFC34E /* MV_X_ProjectUITests.m */; };
+		DAAE370C20B3FE0600785786 /* ListPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAE370B20B3FE0600785786 /* ListPageController.m */; };
+		DAAE370F20B3FE1900785786 /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAE370E20B3FE1900785786 /* ListItem.m */; };
+		DAAE371520B3FE3E00785786 /* ListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAE371420B3FE3E00785786 /* ListViewModel.m */; };
+		DAAE371920B400C700785786 /* ListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAE371720B400C700785786 /* ListViewCell.m */; };
+		DAAE371A20B400C700785786 /* ListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAAE371820B400C700785786 /* ListViewCell.xib */; };
+		DAAE371D20B41A4200785786 /* ListCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAE371C20B41A4200785786 /* ListCellViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,17 @@
 		DA72AA9D20887CFC00BFC34E /* MV-X_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MV-X_ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA72AAA120887CFC00BFC34E /* MV_X_ProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MV_X_ProjectUITests.m; sourceTree = "<group>"; };
 		DA72AAA320887CFC00BFC34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAAE370A20B3FE0600785786 /* ListPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListPageController.h; sourceTree = "<group>"; };
+		DAAE370B20B3FE0600785786 /* ListPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListPageController.m; sourceTree = "<group>"; };
+		DAAE370D20B3FE1900785786 /* ListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
+		DAAE370E20B3FE1900785786 /* ListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
+		DAAE371320B3FE3E00785786 /* ListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewModel.h; sourceTree = "<group>"; };
+		DAAE371420B3FE3E00785786 /* ListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewModel.m; sourceTree = "<group>"; };
+		DAAE371620B400C700785786 /* ListViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewCell.h; sourceTree = "<group>"; };
+		DAAE371720B400C700785786 /* ListViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewCell.m; sourceTree = "<group>"; };
+		DAAE371820B400C700785786 /* ListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewCell.xib; sourceTree = "<group>"; };
+		DAAE371B20B41A4200785786 /* ListCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListCellViewModel.h; sourceTree = "<group>"; };
+		DAAE371C20B41A4200785786 /* ListCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListCellViewModel.m; sourceTree = "<group>"; };
 		DB1761EECF8ECD4CE93EE82E /* Pods-MV-X_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MV-X_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-MV-X_Project/Pods-MV-X_Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +196,7 @@
 		DA72AA7C20887CFA00BFC34E /* MV-X_Project */ = {
 			isa = PBXGroup;
 			children = (
+				DAAE370520B3FAFD00785786 /* MVVM_RAC */,
 				DA2AED232089CAED009CBE80 /* MVVMDemo */,
 				DA2AED222089CAD5009CBE80 /* MVPDemo */,
 				DA72AA7D20887CFA00BFC34E /* AppDelegate.h */,
@@ -210,6 +228,56 @@
 				DA72AAA320887CFC00BFC34E /* Info.plist */,
 			);
 			path = "MV-X_ProjectUITests";
+			sourceTree = "<group>";
+		};
+		DAAE370520B3FAFD00785786 /* MVVM_RAC */ = {
+			isa = PBXGroup;
+			children = (
+				DAAE370920B3FDF500785786 /* Controller */,
+				DAAE370720B3FDF500785786 /* Model */,
+				DAAE370620B3FDF500785786 /* View */,
+				DAAE370820B3FDF500785786 /* ViewModel */,
+			);
+			path = MVVM_RAC;
+			sourceTree = "<group>";
+		};
+		DAAE370620B3FDF500785786 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAAE371620B400C700785786 /* ListViewCell.h */,
+				DAAE371720B400C700785786 /* ListViewCell.m */,
+				DAAE371820B400C700785786 /* ListViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DAAE370720B3FDF500785786 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAAE370D20B3FE1900785786 /* ListItem.h */,
+				DAAE370E20B3FE1900785786 /* ListItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DAAE370820B3FDF500785786 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DAAE371320B3FE3E00785786 /* ListViewModel.h */,
+				DAAE371420B3FE3E00785786 /* ListViewModel.m */,
+				DAAE371B20B41A4200785786 /* ListCellViewModel.h */,
+				DAAE371C20B41A4200785786 /* ListCellViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DAAE370920B3FDF500785786 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DAAE370A20B3FE0600785786 /* ListPageController.h */,
+				DAAE370B20B3FE0600785786 /* ListPageController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAAE371A20B400C700785786 /* ListViewCell.xib in Resources */,
 				DA72AA8A20887CFB00BFC34E /* LaunchScreen.storyboard in Resources */,
 				DA72AA8720887CFB00BFC34E /* Assets.xcassets in Resources */,
 				DA72AA8520887CFA00BFC34E /* Main.storyboard in Resources */,
@@ -366,8 +435,13 @@
 			files = (
 				DA2AED2C2089CB2B009CBE80 /* MVPPresenter.m in Sources */,
 				DA2AED262089CB04009CBE80 /* MVPViewController.m in Sources */,
+				DAAE370F20B3FE1900785786 /* ListItem.m in Sources */,
 				DA2AED352089D051009CBE80 /* MVVMViewModel.m in Sources */,
+				DAAE371520B3FE3E00785786 /* ListViewModel.m in Sources */,
 				DA72AA8220887CFA00BFC34E /* ViewController.m in Sources */,
+				DAAE371D20B41A4200785786 /* ListCellViewModel.m in Sources */,
+				DAAE370C20B3FE0600785786 /* ListPageController.m in Sources */,
+				DAAE371920B400C700785786 /* ListViewCell.m in Sources */,
 				DA2AED3B2089D070009CBE80 /* MVVMViewController.m in Sources */,
 				DA72AA8D20887CFB00BFC34E /* main.m in Sources */,
 				DA2AED2F2089CB41009CBE80 /* MVPModel.m in Sources */,
@@ -547,7 +621,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_Project/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -562,7 +639,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_Project/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,7 +656,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_ProjectTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-ProjectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -591,7 +675,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_ProjectTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-ProjectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -605,7 +693,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_ProjectUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-ProjectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -619,7 +711,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = "MV-X_ProjectUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myz.MV-X-ProjectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
