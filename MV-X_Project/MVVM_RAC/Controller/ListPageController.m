@@ -9,6 +9,8 @@
 #import "ListPageController.h"
 #import "ListViewModel.h"
 #import "ListViewCell.h"
+#import "ListItem.h"
+#import "ListDetailController.h"
 
 static NSString * const kListCellId = @"ListCellId";
 
@@ -33,7 +35,25 @@ static NSString * const kListCellId = @"ListCellId";
     [self.view addSubview:tableView];
     
     self.viewModel = [[ListViewModel alloc] init];
+    //[self.viewModel.loadCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {}];
+    [[self.viewModel.loadCommand execute:nil] subscribeNext:^(id  _Nullable x) {
+        [tableView reloadData];
+    }];
     
+    
+    [self.viewModel.checkSignal subscribeNext:^(id  _Nullable x) {
+        [tableView reloadData];
+    }];
+    
+    [self.viewModel.jumpSignal subscribeNext:^(id  _Nullable x) {
+        if (x) {
+            ListItem *model = (ListItem *)x;
+            ListDetailController *detailVC = [[ListDetailController alloc] init];
+            detailVC.loadUrl = model.alt;
+            [self.navigationController pushViewController:detailVC animated:YES];
+        }
+        
+    }];
     
 }
 

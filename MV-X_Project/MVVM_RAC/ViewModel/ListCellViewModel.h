@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveObjC.h>
+
+@class ListItem;
 
 @interface ListCellViewModel : NSObject
+
+@property (nonatomic, strong) ListItem *item;
+
+@property (nonatomic, strong) RACCommand *checkCommand;
+@property (nonatomic, strong) RACCommand *jumpCommand;
+
++ (instancetype)listCellViewModelWithModel:(ListItem *)item;
 
 @end

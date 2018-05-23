@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MVPViewController.h"
 #import "MVVMViewController.h"
+#import "ListPageController.h"
 
 @interface ViewController ()
 
@@ -37,6 +38,8 @@
 }
 
 - (IBAction)goRACPage:(id)sender {
+    ListPageController *listPage = [[ListPageController alloc] init];
+    [self.navigationController pushViewController:listPage animated:YES];
 }
 
 @end
