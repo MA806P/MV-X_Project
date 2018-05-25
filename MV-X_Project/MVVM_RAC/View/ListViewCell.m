@@ -47,10 +47,22 @@
 }
 
 
+//点击cell事件处理
 - (void)cellJumpNextTapAction {
     [self.viewModel.jumpCommand execute:nil];
 }
 
+//点击关注按钮事件处理
+- (IBAction)followButtonTouchAction:(UIButton *)sender {
+    
+    
+}
+
+
+
+#pragma mark - 图片显示视图功能
+
+//点击图片事件处理
 - (void)cellImageTapAction {
     
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
@@ -87,10 +99,10 @@
     [detailImgView addGestureRecognizer:pan];
     
     
-    [UIView animateWithDuration:0.3 animations:^{
-        detailImgView.frame = self.detailImgFrame;
-        imgContentView.alpha = 1.0;
-    }];
+//    [UIView animateWithDuration:0.3 animations:^{
+//        detailImgView.frame = self.detailImgFrame;
+//        imgContentView.alpha = 1.0;
+//    }];
     
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         detailImgView.frame = self.detailImgFrame;
@@ -126,11 +138,13 @@
     self.imgContentView.alpha = bounceD;
     
     if (pan.state == UIGestureRecognizerStateEnded) {
-        self.imgContentView.alpha = 1.0;
-        self.detailImgView.frame = self.detailImgFrame;
+        
         
         if (moveDistance > 160) {
             [self closeDetailImageViewAction];
+        } else {
+            self.imgContentView.alpha = 1.0;
+            self.detailImgView.frame = self.detailImgFrame;
         }
     }
 }
