@@ -13,6 +13,7 @@
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *alt;
 @property (nonatomic, copy) NSString *image;
+@property (nonatomic, copy) NSString *large;
 @property (nonatomic, copy) NSString *genres;
 
 + (instancetype)listItemWithDictionary:(NSDictionary *)dict;

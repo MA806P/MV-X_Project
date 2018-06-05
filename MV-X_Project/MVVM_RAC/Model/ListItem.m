@@ -15,11 +15,13 @@
         _title = dict[@"title"];
         _alt = dict[@"alt"];
         
-        NSArray *images = dict[@"images"];
-        if (images && [images isKindOfClass:[NSArray class]] && images.count > 0) {
-            _image = [images firstObject];
+        NSDictionary *images = dict[@"images"];
+        if (images && [images isKindOfClass:[NSDictionary class]]) {
+            _image = images[@"small"];
+            _large = images[@"large"];
         } else {
             _image = @"";
+            _large = @"";
         }
         
         NSMutableString *genresStr = [NSMutableString string];

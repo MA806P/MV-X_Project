@@ -24,6 +24,7 @@
 		DA72AA8D20887CFB00BFC34E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72AA8C20887CFB00BFC34E /* main.m */; };
 		DA72AA9720887CFC00BFC34E /* MV_X_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72AA9620887CFC00BFC34E /* MV_X_ProjectTests.m */; };
 		DA72AAA220887CFC00BFC34E /* MV_X_ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72AAA120887CFC00BFC34E /* MV_X_ProjectUITests.m */; };
+		DA868B0E20B56A9F007FE221 /* ListDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA868B0D20B56A9F007FE221 /* ListDetailController.m */; };
 		DAAE370C20B3FE0600785786 /* ListPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAE370B20B3FE0600785786 /* ListPageController.m */; };
 		DAAE370F20B3FE1900785786 /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAE370E20B3FE1900785786 /* ListItem.m */; };
 		DAAE371520B3FE3E00785786 /* ListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAE371420B3FE3E00785786 /* ListViewModel.m */; };
@@ -84,6 +85,8 @@
 		DA72AA9D20887CFC00BFC34E /* MV-X_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MV-X_ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA72AAA120887CFC00BFC34E /* MV_X_ProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MV_X_ProjectUITests.m; sourceTree = "<group>"; };
 		DA72AAA320887CFC00BFC34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA868B0C20B56A9F007FE221 /* ListDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListDetailController.h; sourceTree = "<group>"; };
+		DA868B0D20B56A9F007FE221 /* ListDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListDetailController.m; sourceTree = "<group>"; };
 		DAAE370A20B3FE0600785786 /* ListPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListPageController.h; sourceTree = "<group>"; };
 		DAAE370B20B3FE0600785786 /* ListPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListPageController.m; sourceTree = "<group>"; };
 		DAAE370D20B3FE1900785786 /* ListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 			children = (
 				DAAE370A20B3FE0600785786 /* ListPageController.h */,
 				DAAE370B20B3FE0600785786 /* ListPageController.m */,
+				DA868B0C20B56A9F007FE221 /* ListDetailController.h */,
+				DA868B0D20B56A9F007FE221 /* ListDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2AED2C2089CB2B009CBE80 /* MVPPresenter.m in Sources */,
+				DA868B0E20B56A9F007FE221 /* ListDetailController.m in Sources */,
 				DA2AED262089CB04009CBE80 /* MVPViewController.m in Sources */,
 				DAAE370F20B3FE1900785786 /* ListItem.m in Sources */,
 				DA2AED352089D051009CBE80 /* MVVMViewModel.m in Sources */,
