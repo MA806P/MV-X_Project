@@ -31,7 +31,7 @@
         
         
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake(30, 80, 120, 30);
+        btn.frame = CGRectMake(10, 80, 120, 30);
         [btn setTitle:@"点击改变" forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(btnTouchAction) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn];
